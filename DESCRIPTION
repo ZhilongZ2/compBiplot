@@ -1,13 +1,20 @@
 Package: compBiplot
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Log-Ratio Biplots for Compositional Data
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Zhilong Zhang
+Maintainer: Zhilong Zhang <zhilongz@tamu.edu>
+Description: The compBiplot package provides tools for creating log-ratio biplots 
+    of compositional data. Compositional data, where variables represent proportions 
+    or parts of a whole, require specialized analysis due to their constant-sum 
+    constraint. The package implements core functions for log-ratio transformations 
+    (clr, ilr), principal component analysis (PCA) in the simplex, and biplot 
+    visualization using covariance or correlation scaling. It offers a unified and 
+    user-friendly interface for exploring relationships among components in compositional 
+    datasets and visualizing their geometric structure in reduced dimensions.
+License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
 URL: https://github.com/ZhilongZ2/compBiplot
 BugReports: https://github.com/ZhilongZ2/compBiplot/issues
+RoxygenNote: 7.3.3
