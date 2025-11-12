@@ -18,3 +18,5 @@ LazyData: true
 URL: https://github.com/ZhilongZ2/compBiplot
 BugReports: https://github.com/ZhilongZ2/compBiplot/issues
 RoxygenNote: 7.3.3
+Depends: 
+    R (>= 3.5)
