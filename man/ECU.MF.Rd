@@ -27,7 +27,7 @@ A data frame with \code{n} rows and 16 variables:
 }
 \source{
 Feltes BC, Vieira I, Parraga-Alava J et al. Feature selection reveal peripheral
-blood parameter’s changes between COVID-19 infections patients from Brazil and
+blood parameter's changes between COVID-19 infections patients from Brazil and
 Ecuador. \emph{Infection, Genetics and Evolution}. 2022; 98: 105228.
 }
 \usage{
@@ -53,8 +53,8 @@ See \file{data-raw/ECU_MF.R} for full preprocessing code.
 }
 \references{
 Aitchison J (1986). \emph{The Statistical Analysis of Compositional Data}.
-Aitchison J & Greenacre M (2002). Biplots of compositional data. \emph{JRSS C}, 51(4), 375–392.
+Aitchison J & Greenacre M (2002). Biplots of compositional data. \emph{JRSS C}, 51(4), 375-392.
 Pawlowsky-Glahn V, Egozcue J J, & Tolosana-Delgado R (2015). \emph{Modeling and Analysis of Compositional Data}.
-Gabriel K R (1971). The biplot graphic display of matrices with application to PCA. \emph{Biometrika}, 58(3), 453–467.
+Gabriel K R (1971). The biplot graphic display of matrices with application to PCA. \emph{Biometrika}, 58(3), 453-467.
 }
 \keyword{datasets}

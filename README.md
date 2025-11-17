@@ -1,0 +1,42 @@
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+# compBiplot
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of compBiplot is to provide tools for constructing log-ratio
+biplots for compositional datasets. The package implements centered and
+isometric log-ratio transformations (clr and ilr), and generates
+covariance- or correlation-based biplots via log-ratio PCA (LR-PCA).
+
+## Installation
+
+You can install the development version from GitHub:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("ZhilongZ2/compBiplot")
+library(compBiplot)
+
+
+## Installation
+
+You can install the development version of compBiplot from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("pak")
+pak::pak("ZhilongZ2/compBiplot")
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+``` r
+library(compBiplot)
+## basic example code
+?ECU.MF
+#> starting httpd help server ... done
+```
