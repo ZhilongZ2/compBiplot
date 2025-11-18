@@ -37,6 +37,13 @@ This is a basic example which shows you how to solve a common problem:
 ``` r
 library(compBiplot)
 ## basic example code
-?ECU.MF
-#> starting httpd help server ... done
+
+# Find the sources of dataset included by
+# ?ECU.MF
 ```
+
+Remaining TODOS for compBiplot: \* Add R functions: ilr, corrbiplot,
+covbiplot  
+\* Add tests  
+\* Add vignettes  
+\* Refine documents
