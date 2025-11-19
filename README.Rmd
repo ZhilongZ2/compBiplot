@@ -22,38 +22,48 @@ The goal of compBiplot is to provide tools for constructing log-ratio biplots fo
 
 ## Installation
 
-You can install the development version from GitHub:
+You can install the development version of **compBiplot** from GitHub:
 
-```r
+```{r, eval = FALSE}
 # install.packages("devtools")
 devtools::install_github("ZhilongZ2/compBiplot")
 library(compBiplot)
 
-
-## Installation
-
-You can install the development version of compBiplot from [GitHub](https://github.com/) with:
-
-``` r
-# install.packages("pak")
-pak::pak("ZhilongZ2/compBiplot")
 ```
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+Here are some basic examples which show you how to use **compBiplot**:
 
 ```{r example}
 library(compBiplot)
 ## basic example code
 
-# Find the sources of dataset included by
+# The package includes the cleaned Ecuador–Mexico blood panel:
+data("ECU.MF")
+head(ECU.MF)
+
 # ?ECU.MF
+# See ‘data-raw/ECU_MF.R’ for full preprocessing code.
 ```
 
-Remaining TODOS for compBiplot:
-* Add R functions: ilr, corrbiplot, covbiplot  
-* Add tests  
-* Add vignettes  
-* Refine documents  
+**compBiplot** also includes two common log-ratio transformations that deal with compositional data. They are implemented to be able to handle zero entries:
+```{r}
+# Extract the five compositional parts
+
+X <- as.matrix(ECU.MF[, c("neutrophils", "lymphocytes",
+"monocytes", "eosinophils", "basophils")])
+
+clr_X <- clr_transform(X, zero.method = "cmultRepl")
+head(clr_X)
+
+ilr_X <- ilr_transform(X, zero.method = "cmultRepl")
+head(ilr_X)
+```
+
+Remaining *TODOS* for compBiplot:  
+* Add R functions: corrbiplot, covbiplot  
+* Add tests and examples  
+* Add vignettes    
+* Refine documents 
 

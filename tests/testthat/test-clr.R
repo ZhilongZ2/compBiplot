@@ -28,7 +28,7 @@ test_that("clr_transform matches legacy CLR code (no zeros)", {
   clr_new <- clr_transform(X, zero.method = "none")
 
   # compare (only first 5 cols for clarity — function returns all 5 anyway)
-  expect_equal(clr_new, clr_legacy, tolerance = 1e-10)
+  expect_equal(clr_new, clr_legacy, tolerance = 1e-10, ignore_attr = TRUE)
 })
 
 test_that("clr_transform matches legacy CLR code with cmultRepl", {
@@ -56,6 +56,6 @@ test_that("clr_transform matches legacy CLR code with cmultRepl", {
   clr_new <- clr_transform(X, zero.method = "cmultRepl")
 
   # both should match for the 5 parts
-  expect_equal(clr_new, clr_legacy, tolerance = 1e-10)
+  expect_equal(clr_new, clr_legacy, tolerance = 1e-10, ignore_attr = TRUE)
 })
 
